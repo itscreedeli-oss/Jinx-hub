@@ -1,0 +1,120 @@
+.project-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  transition: background .2s, transform .2s, box-shadow .2s;
+  cursor: pointer;
+}
+.project-btn:hover {
+  background: linear-gradient(90deg, #1e40af 60%, #3b82f6 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(37,99,235,0.18);
+}
+body{
+  margin:0;
+  font-family: system-ui, sans-serif;
+  height:100vh;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(to top, #3b82f6 0%, #60a5fa 30%, #ffffff 35%, #ffffff 100%);
+}
+.home-box{
+  width:520px;
+  background:#fff;
+  border-radius:24px;
+  box-shadow:0 12px 32px rgba(0,0,0,.2);
+  padding:50px 40px;
+  text-align:center;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.home-box:hover{
+  transform: translateY(-4px);
+  box-shadow:0 16px 40px rgba(0,0,0,.25);
+}
+.home-box h1{
+  font-size:36px;
+  margin-bottom:12px;
+}
+.home-box h1 span{
+  color:#2563eb;
+}
+.home-box p{
+  color:#444;
+  margin-bottom:30px;
+  font-size:18px;
+}
+.menu{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+.menu-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  font-size:15px;
+  color:#1e293b;
+  cursor:pointer;
+  transition:transform .2s, color .2s, background .2s;
+  padding:10px;
+  border-radius:12px;
+  text-decoration: none;
+}
+.menu-item:hover{
+  transform:scale(1.1);
+  color:#2563eb;
+  background:#eff6ff;
+}
+.menu-item svg{
+  width:42px;
+  height:42px;
+  margin-bottom:6px;
+  stroke-width:2.2;
+}
+.window{
+  position:absolute;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,.25);
+  width:420px;
+  overflow:hidden;
+  animation: fadeIn .3s ease;
+}
+@keyframes fadeIn {
+  from {opacity:0; transform:scale(0.95);}
+  to {opacity:1; transform:scale(1);}
+}
+.window-header{
+  background:#2563eb;
+  color:#fff;
+  padding:10px 12px;
+  font-weight:500;
+  border-top-left-radius:12px;
+  border-top-right-radius:12px;
+  cursor:move;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:14px;
+}
+.window-content{
+  padding:18px;
+  background:#f9fafb;
+}
+.window-header button{
+  background:none;
+  border:none;
+  color:#fff;
+  font-size:16px;
+  cursor:pointer;
+}
